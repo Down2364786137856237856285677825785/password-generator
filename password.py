@@ -22,6 +22,7 @@ def password_generator(length):
     password = ''.join(secrets.choice(resolved_symbols_for_code_of_all_symbols)
                         for _ in range(length))
     return password 
+    
 while True:
     # Человек дает название паролю
     smooth_text("\nВведите название пароля: ")
